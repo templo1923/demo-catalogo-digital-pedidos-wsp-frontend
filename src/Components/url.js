@@ -2,9 +2,9 @@
 const getBaseURL = () => {
     const currentHost = window.location.hostname; // Obtiene el host actual
     if (currentHost.startsWith('www.')) {
-        return 'https://tienda.catalogosco.top/';
+        return 'https://demo-catalogo-digital-pedidos-wsp-backend.onrender.com/';
     } else {
-        return 'https://tienda.catalogosco.top/';
+        return 'https://demo-catalogo-digital-pedidos-wsp-backend.onrender.com/';
     }
 };
 
