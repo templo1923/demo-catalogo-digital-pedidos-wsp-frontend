@@ -1,0 +1,78 @@
+/* Estilos para el contenedor principal del desarrollador */
+.Developer {
+  background: var(--color1); /* Fondo usando una variable CSS */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente el contenido */
+  margin: 0;
+  color: var(--blanco); /* Color de texto usando una variable CSS */
+  cursor: pointer;
+  gap: 10px; /* Espacio entre elementos, si hubiera más de uno */
+}
+
+/* Estilo específico para el enlace dentro del componente Developer */
+.Developer a {
+  color: var(--blanco); /* Mantiene el color del texto blanco para el enlace */
+  text-decoration: underline; /* Añade un subrayado para que se vea como un enlace */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente el contenido */
+  
+
+}/* Estilos para el contenedor principal del desarrollador */
+.Developer {
+  background: var(--color1); /* Fondo usando una variable CSS */
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+  justify-content: center;
+  align-items: center; /* Centra verticalmente el contenido */
+  margin: 0;
+  color: var(--blanco); /* Color de texto usando una variable CSS */
+  cursor: pointer;
+  gap: 10px; /* Espacio entre elementos */
+  text-align: center; /* Centra el texto por defecto */
+}
+
+/* Estilo específico para el enlace dentro del componente Developer */
+.developer-link {
+  color: var(--blanco); /* Mantiene el color del texto blanco para el enlace */
+  text-decoration: underline; /* Añade un subrayado para que se vea como un enlace */
+  white-space: nowrap; /* Evita que el enlace se rompa en múltiples líneas */
+  transition: opacity 0.3s ease; /* Transición suave para hover */
+}
+
+.developer-link:hover {
+  opacity: 0.8; /* Efecto hover sutil */
+}
+
+/* Estilo para el texto de copyright */
+.developer-text {
+  color: var(--blanco);
+  white-space: nowrap; /* Evita que el texto se rompa en pantallas medianas */
+}
+
+/* Media query para hacer el diseño responsivo en pantallas más pequeñas */
+@media (max-width: 900px) {
+  .Developer {
+    padding: 20px 3%; /* Ajusta el padding para móviles */
+    flex-direction: column; /* Cambia a disposición vertical en móviles */
+    gap: 8px; /* Reduce el espacio entre elementos */
+  }
+  
+  .developer-link,
+  .developer-text {
+    white-space: normal; /* Permite que el texto se envuelva en móviles */
+    text-align: center; /* Centra el texto en móviles */
+  }
+}
+
+/* Media query adicional para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .Developer {
+    padding: 15px 2%; /* Reduce aún más el padding */
+    font-size: 0.9em; /* Reduce ligeramente el tamaño de fuente */
+  }
+}
+
