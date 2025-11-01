@@ -2,9 +2,9 @@
 const getBaseURL = () => {
     const currentHost = window.location.hostname; // Obtiene el host actual
     if (currentHost.startsWith('www.')) {
-        return 'https://demo-catalogo-digital-pedidos-wsp-backend.onrender.com/';
+        return 'https://magaz.alwaysdata.net/demotienda';
     } else {
-        return 'https://demo-catalogo-digital-pedidos-wsp-backend.onrender.com/';
+        return 'https://magaz.alwaysdata.net/demotienda';
     }
 };
 
